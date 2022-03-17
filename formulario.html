@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+    <title>Contato</title>
+</head>
+
+<body>
+<form action="" method="POST" id="meuform">
+
+    <fieldset form="Contato">
+        <legend><strong>Contato</strong></legend>
+        
+        <div><label for="assuntoselect">Assunto:</label>
+            <select name="assunto" id="assuntoselect">
+            <option value="Selecione o assunto">Selecione o assunto</option>
+            <option value="Suporte">Suporte</option>></option>
+            <option value="Sugestão">Sugestão</option>
+            <option value="Reclamação">Reclamação</option></select>
+            </div> <br>
+
+        <div><label for="nome">Nome Completo:</label> <br>
+        <input type="text" name="nome" id="nome" required placeholder="Seu nome">
+        </div> <br>
+
+        <div><label for="email">E-mail:</label> <br>
+        <input type="email" name="email" id="email" required autocomplete="email" placeholder="email@seudominio.com"> 
+        </div> <br>
+
+        <div><label for="mensagem">Mensagem</label> <br>
+        <textarea name="mensagem" id="mensagem" maxlength="100" rows="5" cols="35" placeholder="Digite sua mensagem" style="resize:none"></textarea></div> <br>
+        
+
+        <div> <input type="checkbox" name="subscribe" id="subscribe">
+        <label for="subscribe">Aceito receber novidades por e-mail</label> 
+        </div> <br>
+        
+
+            <button type="submit" form="meuform">Enviar</button>
+</form>    
+</body>
+</html>
